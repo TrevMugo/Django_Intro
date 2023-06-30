@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+{#      Start by loading static     #}
+    {% load static %}
+{#       Start of JS connection      #}
+    <script src="{% static 'bootstrap/js/bootstrap.js' %}" ></script>
+
+{#      Start of CSS connection         #}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/styles.css' %}">
+
+</head>
+<body>
+<h1>Emobilis Gallery</h1>
+<a href="{% url 'enda-nyumbani' %}"><button class="btn btn-primary">Home</button></a>
+<a href="{% url 'enda-kuhusu' %}"><button class="btn btn-success">About</button></a>
+<a href="{% url 'enda-mapicha' %}"><button class="btn btn-outline-secondary">Gallery</button></a>
+<a href=""><button class="btn btn-outline-success">Login</button></a>
+<a href=""><button class="btn btn-sm">Register</button></a>
+
+<hr>
+<img class="pic-one" src="../static/images/meeee.png" alt="">
+<img class="pic-one" src="../static/images/123.jpg" alt="">
+<img class="pic-one" src="../static/images/bg.jpg" alt="">
+
+</body>
+</html>

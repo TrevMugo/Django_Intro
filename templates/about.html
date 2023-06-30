@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+{#      Start by loading static     #}
+    {% load static %}
+{#       Start of JS connection      #}
+    <script src="{% static 'bootstrap/js/bootstrap.js' %}" ></script>
+
+{#      Start of CSS connection         #}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+</head>
+<body>
+<h2>About Emobilis</h2>
+<a href="{% url 'enda-nyumbani' %}"><button class="btn btn-info">Home</button></a>
+<a href="{% url 'enda-kuhusu' %}"><button class="btn btn-secondary">About</button></a>
+<a href="{% url 'enda-mapicha' %}"><button class="btn btn-primary">Gallery</button></a>
+<a href=""> <button class="btn btn-warning">Login</button></a>
+<a href=""><button class="btn btn-danger">Register</button></a>
+<hr>
+<h3>Intro</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing in inventore molestias officiis.</p>
+
+</body>
+</html>
